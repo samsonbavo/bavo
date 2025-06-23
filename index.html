@@ -1,0 +1,641 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Samson Bavo Website</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<a href="index.html" class="logo"><strong>Samson</strong> <span>Bavo</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="About.html">About</a></li>
+							<li><a href="https://samsonbavoportfolioprojects-dev-ed.trailblaze.my.site.com/portfolioprojects/">Portfolio</a></li>
+							<li><a href="#contact">Contact</a></li>
+					</nav>
+
+				<!-- Banner -->
+				 <section id="banner" class="major" style="display: flex; align-items: center; min-height: 85vh;">
+    <!-- Profile Image Column -->
+    <div class ="inner" style="flex: 1; display: flex; justify-content: center; align-items: center;">
+        <img src="images/profile.jpg" alt="Samson Bavo" style="width: 500px; height: 500px; border-radius: 100%; object-fit: cover; box-shadow: 100 0px 100px rgba(0,0,0,0); " />
+    </div>
+
+    <!-- Text Content Column -->
+    <div class="inner" style="flex: 2;">
+        <header class="major">
+            <h1>I am Samson Bavo</h1>
+			<h2>A Salesforce Data Analyst</h2>
+        </header>
+        <div class="content">
+            <p>I translate data into powerful insights <br />
+                that inspire action, clarity, and growth.</p>
+            <ul class="actions">
+                <li><a href="#one" class="button scrolly">My Portfolio</a></li>
+                <li><a href="https://drive.google.com/file/d/19RpNdu2WNLwK7Uv4VY2f3MSxUm9hvaG5/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="button scrolly">Download My Resume 📥</a></li>
+            </ul>
+			
+        </div>
+		
+    </div>
+	
+</section>
+<a href="#one" class = "scrolly inner solid fa-arrow-down icon is-preload alt" style = " font-size: 48px; color: white;
+  display: block;
+  
+  bottom: 0;
+  left: -200;
+  width: 100%;
+  text-align: center;" ></a>
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+						 	<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>About Me</h2>
+									</header>
+									<p>I am Salesforce Data Analyst with the ranking of Rangers and have gathered over 82000 points, 159+ Badges including 3 Super Badges and 32+ Trails. </p>
+									<ul class="actions">
+										<li><a href="About.html" class="button next">learn More</a></li>
+									</ul>
+								</div>
+							</section>
+					</div>
+<!-- start code from gemini -->
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="assets/css/noscript.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Major', Arial;
+            
+            color: #ffffff;
+        
+        .card {
+            
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+            /* Added transform and transition for pop-out effect common to all cards */
+            transform: translateY(0); /* Ensure initial state is defined for transition */
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px); /* Lift up slightly on hover */
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.1); /* Enhanced shadow on hover */
+        }
+        .gradient-text {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .btn-primary {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background: linear-gradient(45deg, #764ba2, #667eea);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(118, 75, 162, 0.4);
+        }
+        .btn-secondary {
+            background-color: white;
+            color: #764ba2;
+            border: 1px solid #764ba2;
+            transition: all 0.3s ease;
+        }
+        .btn-secondary:hover {
+            background-color: #f0f4f8;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(118, 75, 162, 0.2);
+        }
+        /* Styles for the main tabs */
+        .main-tab-button {
+            padding: 0.75rem 1.5rem;
+            border-bottom: 3px solid transparent;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: #667eea; /* Default color */
+        }
+        .main-tab-button.active {
+            border-color: #764ba2;
+            color: #764ba2;
+        }
+        .main-tab-button:hover:not(.active) {
+            color: #5a67d8; /* Darker hover color */
+            border-color: #a78bfa; /* Lighter border on hover to show interaction */
+            background-color: rgba(102, 126, 234, 0.05); /* Very light tint of primary color */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+            font-weight: 700; /* Bolder text on hover */
+        }
+        .main-tab-content {
+            display: none;
+            padding-top: 2rem; /* Spacing below tabs */
+        }
+        .main-tab-content.active {
+            display: block;
+        }
+
+        /* Styles for the nested skills tabs */
+        .nested-tab-button {
+            padding: 0.5rem 1rem;
+            border-bottom: 2px solid transparent;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: #4a5568; /* Default text color for nested tabs */
+        }
+        .nested-tab-button.active {
+            border-color: #667eea;
+            color: #667eea;
+        }
+        .nested-tab-button:hover:not(.active) {
+            color: #4c51bf;
+            border-color: #c7d2fe; /* Lighter border on hover to show interaction */
+            background-color: rgba(102, 126, 234, 0.03); /* Very light tint of primary color */
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03); /* Subtle shadow */
+            font-weight: 600; /* Bolder text on hover */
+        }
+        .nested-tab-content {
+            display: none;
+        }
+        .nested-tab-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="is-preload">
+
+    <!-- Header/Navigation Bar -->
+    <header class="p-6 bg-white shadow-sm sticky top-0 z-50 rounded-b-xl">
+    
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 hover:text-indigo-600 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-white bg-opacity-95 z-40 flex flex-col items-center justify-center space-y-8">
+            <button id="close-mobile-menu" class="absolute top-6 right-6 text-gray-800 hover:text-indigo-600 focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            <a href="#about" class="text-3xl text-gray-800 hover:text-indigo-600 font-medium transition duration-300" onclick="hideMobileMenu()">About</a>
+            <a href="#main-content-tabs" class="text-3xl text-gray-800 hover:text-indigo-600 font-medium transition duration-300" onclick="hideMobileMenu(); showMainTab('experience-tab-content')">Experience</a>
+            <a href="#main-content-tabs" class="text-3xl text-gray-800 hover:text-indigo-600 font-medium transition duration-300" onclick="hideMobileMenu(); showMainTab('skills-tab-content')">Skills</a>
+            <a href="#main-content-tabs" class="text-3xl text-gray-800 hover:text-indigo-600 font-medium transition duration-300" onclick="hideMobileMenu(); showMainTab('portfolio-tab-content')">Portfolio</a>
+            <a href="#main-content-tabs" class="text-3xl text-gray-800 hover:text-indigo-600 font-medium transition duration-300" onclick="hideMobileMenu(); showMainTab('education-certifications-tab-content')">Education & Certifications</a>
+            <a href="#contact" class="text-3xl text-gray-800 hover:text-indigo-600 font-medium transition duration-300" onclick="hideMobileMenu()">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Tabbed Content Section -->
+    <section id="main-content-tabs" class="bg-white py-16 md:py-24 rounded-xl shadow-inner">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 gradient-text">My Professional Journey & Expertise</h2>
+
+            <!-- Main Tab Buttons -->
+            <div class="flex flex-wrap justify-center border-b border-gray-200 mb-8">
+                <button class="main-tab-button active" data-tab="experience-tab-content">Experience</button>
+                <button class="main-tab-button" data-tab="skills-tab-content">Skills</button>
+                <button class="main-tab-button" data-tab="portfolio-tab-content">Portfolio</button>
+                <button class="main-tab-button" data-tab="education-certifications-tab-content">Education & Certifications</button>
+            </div>
+
+            <!-- Tab Content: Professional Experience -->
+            <div id="experience-tab-content" class="main-tab-content active">
+                <h3 class="sr-only">Professional Experience</h3>
+                <div class="max-w-4xl mx-auto space-y-12">
+                    <!-- Manifest & Company Inc. -->
+                    <div class="card p-8 rounded-lg shadow-md">
+                        <div class="flex justify-between items-center mb-4">
+                            <h4 class="text-2xl font-bold text-indigo-800">Manifest & Company Inc.</h4>
+                            <span class="text-gray-600 font-medium">Jan 2023 - Present</span>
+                        </div>
+                        <p class="text-lg text-gray-700 font-semibold mb-2">Data Analyst - CRM & Executive Reporting</p>
+                        <p class="text-gray-600 mb-4">A North America based Experienced Salesforce Implementation Consulting Company. The company helps businesses deploy cloud-based solutions that improve productivity. Former clients include Deloitte, RBC, & Government of Canada.</p>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li>Salesforce CRM Migration Dashboards: Designed Tableau and Power BI dashboards to track migration progress, adoption rates, and KPI alignment, increasing stakeholder visibility and improving Salesforce usage by 18%.</li>
+                            <li>Daily Data Sync via SQL & SFMC: Created automated data pipelines integrating Salesforce and SFMC, reducing latency and increasing daily reporting accuracy to 97%, while shortening manual analysis time by 40%.</li>
+                            <li>Data Governance & KPI Strategy: Developed QA testing protocols and executive-facing KPI frameworks, minimizing migration error rates by 30% and aligning dashboards to executive metrics.</li>
+                            <li>Sentiment Trends from Gong.io Exports: Conducted NLP-informed reviews of Gong transcripts and feedback data to inform product roadmap shifts and highlight emerging pain points in user adoption.</li>
+                            <li>Cross-Functional Collaboration: Delivered bi-weekly insights to Sales Ops, IT, and Product teams while managing Jira epics related to dashboard features and Salesforce functionality enhancements.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Metro Inc. -->
+                    <div class="card p-8 rounded-lg shadow-md">
+                        <div class="flex justify-between items-center mb-4">
+                            <h4 class="text-2xl font-bold text-indigo-800">Metro Inc.</h4>
+                            <span class="text-gray-600 font-medium">Aug 2020 - Dec 2022</span>
+                        </div>
+                        <p class="text-lg text-gray-700 font-semibold mb-2">Data Analyst - Loyalty & Retail Analytics</p>
+                        <p class="text-gray-600 mb-4">A Canadian third-largest supermarket chain (Over 900 stores) operating in the provinces of QC and ON, with divisions such as Food Basics, Super C; Marche Richelieu, Les 5 Saisons, Marche Ami, and The Barn Markets.</p>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li>CRM Data Segmentation & Analytics: Used SQL and SFMC to analyze 1M+ loyalty records, building actionable segmentation that increased targeted conversion rates by 10%.</li>
+                            <li>Attribution Logic for Personalized Campaigns: Developed dynamic rules in SFMC to support multivariate testing and targeting workflows that improved email open rates by 25%.</li>
+                            <li>Forecasting Models & Inventory Insights: Designed predictive dashboards in Tableau to monitor inventory KPIs and merchandising cycles across 150+ stores, reducing stockouts by 12%.</li>
+                            <li>Data QA Protocols & Governance Layer: Implemented QA testing logic and reconciliation tables across CRM reports to ensure consistency, reducing weekly inaccuracies by 30%.</li>
+                            <li>Stakeholder Tools Enablement: Delivered internal workshops to 50+ business users on campaign dashboard usage, decreasing ad hoc report requests by 35%.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Multimatic Inc. -->
+                    <div class="card p-8 rounded-lg shadow-md">
+                        <div class="flex justify-between items-center mb-4">
+                            <h4 class="text-2xl font-bold text-indigo-800">Multimatic Inc.</h4>
+                            <span class="text-gray-600 font-medium">May 2018 - July 2020</span>
+                        </div>
+                        <p class="text-lg text-gray-700 font-semibold mb-2">Business Analyst - Procurement & Vendor Analytics</p>
+                        <p class="text-gray-600 mb-4">A privately held Canadian Corporation that is a global automotive manufacturer and supplier of components, systems, and engineering services in the automotive industry.</p>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li>Procurement Dashboard Automation: Built Power BI scorecards for vendor SLA performance, pricing deviations, and delivery metrics that improved fulfillment tracking and raised on-time delivery by 20%.</li>
+                            <li>SQL Pipelines for ERP Integration: Created end-to-end SQL dataflows to pull, clean, and visualize procurement and fulfillment data, reducing manual effort by 35% and increasing data freshness.</li>
+                            <li>Strategic Cost Benchmarking: Performed historical trend analysis that enabled renegotiations across vendor categories, reducing annual procurement spend by 15%.</li>
+                            <li>Audit-Ready Reconciliation Templates: Created standard QA sheets and audit logs to validate monthly procurement metrics and enhance internal control compliance.</li>
+                            <li>Weekly Procurement Briefs for Executives: Built dynamic Power BI exports summarizing savings potential, delivery risk, and vendor variability, helping reduce executive report preparation time by 25%.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Content: Skills & Expertise -->
+            <div id="skills-tab-content" class="main-tab-content">
+                <div class="max-w-5xl mx-auto">
+                    <!-- Nested Tab Buttons for Skills -->
+                    <div class="flex justify-center border-b border-gray-200 mb-8">
+                        <button class="nested-tab-button active" data-tab="leadership">Leadership & Operational Excellence</button>
+                        <button class="nested-tab-button" data-tab="technical">Technical & Software</button>
+                    </div>
+
+                    <!-- Nested Tab Content: Leadership & Operational Excellence -->
+                    <div id="leadership" class="nested-tab-content active">
+                        <h3 class="sr-only">Leadership & Operational Excellence</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <div class="card p-6 rounded-lg shadow-md">
+                                <p class="text-gray-600 font-semibold text-lg">CRM Reimplementation & Migration Strategy</p>
+                            </div>
+                            <div class="card p-6 rounded-lg shadow-md">
+                                <p class="text-gray-600 font-semibold text-lg">Data Querying, SQL Scripting & Visualization Best Practices</p>
+                            </div>
+                            <div class="card p-6 rounded-lg shadow-md">
+                                <p class="text-gray-600 font-semibold text-lg">User Story Development, Agile Sprint Planning & JIRA Board Management</p>
+                            </div>
+                            <div class="card p-6 rounded-lg shadow-md">
+                                <p class="text-gray-600 font-semibold text-lg">Dashboard Automation, Data Governance & Reporting QA Protocols</p>
+                            </div>
+                            <div class="card p-6 rounded-lg shadow-md">
+                                <p class="text-gray-600 font-semibold text-lg">Data Research, Executive Insights & Recommendation Delivery</p>
+                            </div>
+                            <div class="card p-6 rounded-lg shadow-md">
+                                <p class="text-gray-600 font-semibold text-lg">Stakeholder Alignment & Multi-Team Requirement Gathering</p>
+                            </div>
+                            <div class="card p-6 rounded-lg shadow-md">
+                                <p class="text-gray-600 font-semibold text-lg">Frontline Engagement, Sprint Demo Leadership & Change Enablement</p>
+                            </div>
+                            <div class="card p-6 rounded-lg shadow-md">
+                                <p class="text-gray-600 font-semibold text-lg">Gong.io Workflow Familiarity & Sentiment Data Review</p>
+                            </div>
+                            <div class="card p-6 rounded-lg shadow-md">
+                                <p class="text-gray-600 font-semibold text-lg">Reporting Automation</p>
+                            </div>
+                            <div class="card p-6 rounded-lg shadow-md">
+                                <p class="text-gray-600 font-semibold text-lg">Data Governance</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nested Tab Content: Technical & Software -->
+                    <div id="technical" class="nested-tab-content">
+                        <h3 class="sr-only">Technical & Software</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <div class="card p-6 rounded-lg shadow-md">
+                                <p class="text-gray-600 font-semibold text-lg">Salesforce Marketing Cloud (SFMC)</p>
+                            </div>
+                            <div class="card p-6 rounded-lg shadow-md">
+                                <p class="text-gray-600 font-semibold text-lg">Power BI / Tableau / Excel</p>
+                            </div>
+                            <div class="card p-6 rounded-lg shadow-md">
+                                <p class="text-gray-600 font-semibold text-lg">SQL / Python / R</p>
+                            </div>
+                            <div class="card p-6 rounded-lg shadow-md">
+                                <p class="text-gray-600 font-semibold text-lg">Sales CRM</p>
+                            </div>
+                            <div class="card p-6 rounded-lg shadow-md">
+                                <p class="text-gray-600 font-semibold text-lg">Jira / Confluence</p>
+                            </div>
+                            <div class="card p-6 rounded-lg shadow-md">
+                                <p class="text-gray-600 font-semibold text-lg">ETL Tools</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Content: Portfolio Projects -->
+            <div id="portfolio-tab-content" class="main-tab-content">
+                <h3 class="sr-only">My Portfolio Projects</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                   
+					
+					
+					<!-- Project Card 1 -->
+                    <div class="card rounded-lg overflow-hidden">
+                        <img src="https://placehold.co/600x350/a78bfa/ffffff?text=Sales+Analytics+Dashboard" alt="Project 1" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-xl font-semibold mb-2 text-indigo-800">Enhanced Sales Performance Dashboard</h4>
+                            <p class="text-gray-600 text-sm mb-4">Developed a comprehensive Tableau CRM dashboard for real-time sales insights and forecasting.</p>
+                            <a href="#" class="inline-block text-indigo-600 hover:text-indigo-800 font-medium text-sm">View Project &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Project Card 2 -->
+                    <div class="card rounded-lg overflow-hidden">
+                        <img src="https://placehold.co/600x350/818cf8/ffffff?text=Data+Migration+Strategy" alt="Project 2" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-xl font-semibold mb-2 text-indigo-800">CRM Data Migration & Cleansing Strategy</h4>
+                            <p class="text-gray-600 text-sm mb-4">Led a complex data migration project, including data cleansing, transformation, and validation for a large enterprise.</p>
+                            <a href="#" class="inline-block text-indigo-600 hover:text-indigo-800 font-medium text-sm">View Project &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Project Card 3 -->
+                    <div class="card rounded-lg overflow-hidden">
+                        <img src="https://placehold.co/600x350/6366f1/ffffff?text=Customer+Churn+Analysis" alt="Project 3" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-xl font-semibold mb-2 text-indigo-800">Customer Churn Prediction Model in Salesforce</h4>
+                            <p class="text-gray-600 text-sm mb-4">Implemented a data model and reporting framework to identify at-risk customers using Salesforce data.</p>
+                            <a href="#" class="inline-block text-indigo-600 hover:text-indigo-800 font-medium text-sm">View Project &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Project Card 4 (Future Project Placeholder) -->
+                    <div class="card rounded-lg overflow-hidden opacity-75">
+                        <img src="https://placehold.co/600x350/a78bfa/ffffff?text=Future+Project+1" alt="Future Project Placeholder" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-xl font-semibold mb-2 text-gray-500">Future Project: [Project Title]</h4>
+                            <p class="text-gray-400 text-sm mb-4">Description of an upcoming project focusing on Salesforce data automation.</p>
+                            <span class="inline-block text-gray-400 font-medium text-sm">Coming Soon</span>
+                        </div>
+                    </div>
+                    <!-- Project Card 5 (Future Project Placeholder) -->
+                    <div class="card rounded-lg overflow-hidden opacity-75">
+                        <img src="https://placehold.co/600x350/818cf8/ffffff?text=Future+Project+2" alt="Future Project Placeholder" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-xl font-semibold mb-2 text-gray-500">Future Project: [Project Title]</h4>
+                            <p class="text-gray-400 text-sm mb-4">Description of an upcoming project involving advanced Salesforce data visualization.</p>
+                            <span class="inline-block text-gray-400 font-medium text-sm">Coming Soon</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Content: Education & Certifications -->
+            <div id="education-certifications-tab-content" class="main-tab-content">
+                <h3 class="sr-only">Education & Professional Development</h3>
+                <div class="max-w-4xl mx-auto space-y-12">
+                    <!-- Education Section Content -->
+                    <div class="card p-8 rounded-lg shadow-md text-center">
+                        <h4 class="text-3xl font-bold mb-8 gradient-text">Education</h4>
+                        <div>
+                            <h5 class="text-2xl font-bold text-indigo-800">Bachelor of Business Administration with Honors & Minor in Mathematics</h5>
+                            <p class="text-lg text-gray-700 font-semibold mb-2">Memorial University of Newfoundland, Canada</p>
+                            <p class="text-gray-600">2009</p>
+                        </div>
+                    </div>
+
+                    <!-- Certifications Section Content -->
+                    <div class="card p-8 rounded-lg shadow-md text-center">
+                        <h4 class="text-3xl font-bold mb-8 gradient-text">Professional Development & Certifications</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
+                            <div class="card p-6 rounded-lg shadow-md">
+                                <h5 class="text-xl font-semibold text-indigo-800">Salesforce Certified Agentforce Specialist</h5>
+                                <p class="text-gray-600">2024</p>
+                            </div>
+                            <div class="card p-6 rounded-lg shadow-md">
+                                <h5 class="text-xl font-semibold text-indigo-800">Salesforce Certified Administrator</h5>
+                                <p class="text-gray-600">2023</p>
+                            </div>
+                            <div class="card p-6 rounded-lg shadow-md">
+                                <h5 class="text-xl font-semibold text-indigo-800">Professional Scrum Product Owner I</h5>
+                                <p class="text-gray-600">2022</p>
+                            </div>
+                            <div class="card p-6 rounded-lg shadow-md">
+                                <h5 class="text-xl font-semibold text-indigo-800">Professional Scrum Master I</h5>
+                                <p class="text-gray-600">2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                // If it's a main-tab link, also activate the correct tab
+                if (this.getAttribute('href') === '#main-content-tabs') {
+                    const targetTabId = this.getAttribute('onclick').match(/'(.*)'/)[1];
+                    showMainTab(targetTabId);
+                }
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMobileMenuButton = document.getElementById('close-mobile-menu');
+
+        function showMobileMenu() {
+            mobileMenu.classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling when menu is open
+        }
+
+        function hideMobileMenu() {
+            mobileMenu.classList.add('hidden');
+            document.body.style.overflow = ''; // Restore scrolling
+        }
+
+        mobileMenuButton.addEventListener('click', showMobileMenu);
+        closeMobileMenuButton.addEventListener('click', hideMobileMenu);
+
+        // Main Tab functionality
+        const mainTabButtons = document.querySelectorAll('.main-tab-button');
+        const mainTabContents = document.querySelectorAll('.main-tab-content');
+
+        function showMainTab(targetTabId) {
+            // Deactivate all main tab buttons and hide all main tab contents
+            mainTabButtons.forEach(btn => btn.classList.remove('active'));
+            mainTabContents.forEach(content => content.classList.remove('active'));
+
+            // Activate the corresponding button and show its content
+            const clickedButton = document.querySelector(`.main-tab-button[data-tab="${targetTabId}"]`);
+            if (clickedButton) {
+                clickedButton.classList.add('active');
+            }
+            const targetContent = document.getElementById(targetTabId);
+            if (targetContent) {
+                targetContent.classList.add('active');
+            }
+
+            // If the skills tab is activated, ensure its nested default tab is also active
+            if (targetTabId === 'skills-tab-content') {
+                const nestedTabButtons = document.querySelectorAll('#skills-tab-content .nested-tab-button');
+                if (nestedTabButtons.length > 0) {
+                    // Only click if it's not already active
+                    if (!nestedTabButtons[0].classList.contains('active')) {
+                         nestedTabButtons[0].click(); // Activate the first nested tab by default
+                    }
+                }
+            }
+        }
+
+        mainTabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const targetTab = button.dataset.tab;
+                showMainTab(targetTab);
+            });
+        });
+
+        // Nested Tab functionality for Skills section
+        const nestedTabButtons = document.querySelectorAll('#skills-tab-content .nested-tab-button');
+        const nestedTabContents = document.querySelectorAll('#skills-tab-content .nested-tab-content');
+
+        nestedTabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const targetTab = button.dataset.tab;
+
+                // Deactivate all nested buttons and hide all nested contents
+                nestedTabButtons.forEach(btn => btn.classList.remove('active'));
+                nestedTabContents.forEach(content => content.classList.remove('active'));
+
+                // Activate the clicked button and show its content
+                button.classList.add('active');
+                document.getElementById(targetTab).classList.add('active');
+            });
+        });
+
+        // Ensure the default main tab and its nested tab are active on load
+        document.addEventListener('DOMContentLoaded', () => {
+            showMainTab('experience-tab-content'); // Activate the Experience tab by default
+        });
+    </script>
+</body>
+
+
+    
+<!-- end code from gemini -->
+
+				<!-- Contact -->
+					<section id="contact">
+						<div class="inner">
+							<section>
+									<h1 class="Major" style="font-size: xx-large;">Contact Me</h1>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="6"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Clear" /></li>
+									</ul>
+								</form>
+							</section>
+							<section class="split">
+								<section>
+										<h1></h1>
+									<div class="contact-method">
+										<span class="icon solid alt fa-envelope"></span>
+										<h3>Email</h3>
+										<a href="#">samsonbavo@gmail.com</a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-phone"></span>
+										<h3>Phone</h3>
+										<span>(647) 702-7217 </span>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-home"></span>
+										<h3>Address</h3>
+										<span><br />
+										Toronto, ON<br />
+										Canada</span>
+									</div>
+								</section>
+							</section>
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; 2025</li><li>Design: <a href="https://html5up.net">Samson Bavo</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
