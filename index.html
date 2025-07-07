@@ -6,157 +6,133 @@
 -->
 <html>
 	<head>
-		<title>Samson Bavo Website</title>
+		<title>Samson Bavo Portfolio Website</title>
+    <link rel="icon" type="image/png" href="images/SB.png">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<script src="https://cdn.tailwindcss.com"></script>
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-	</head>
+        <style>
+            .fade-in {
+              opacity: 0;
+              animation: fadeIn 2s ease-in forwards;
+            }
+        
+            @keyframes fadeIn {
+              to {
+                opacity: 1;
+              }
+            }
+          </style>
+    </head>
 	<body class="is-preload">
+<!-- Wrapper -->
+<div id="wrapper">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <!-- Header -->
+    <header id="header" class="alt">
+        <img src="images/profile.jpg" alt="Samson Bavo Profile Picture"
+            class="w-24 h-24 rounded-full object-cover mr-4 shadow-md border-2 border-white"
+            onerror="this.onerror=null;this.src='https://placehold.co/96x96/E1D8CE/8D7B68?text=SB';">
+        
+        <a href="index.html" class="logo" style="line-height: 2;">
+            <strong style="font-size: 22px;">Samson</strong> <span style="font-size: 22px;">Bavo</span><br />
+            <span style="font-size: 18px; text-transform: capitalize;">Certified Salesforce Administrator</span>
+        </a>
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<a href="index.html" class="logo"><strong>Samson</strong> <span>Bavo</span></a>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+        <nav>
+            <a href="#menu" style="font-size: 24px;">Menu</a>
+        </nav>
+    </header>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<ul class="links">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="About.html">About</a></li>
-							<li><a href="https://samsonbavoportfolioprojects-dev-ed.trailblaze.my.site.com/portfolioprojects/" target="_blank">Portfolio</a></li>
-							<li><a class="scrolly" href="#contact">Contact</a></li>
-					</nav>
+    <!-- Menu -->
+    <nav id="menu">
+        <ul class="links">
+            <li><a class="scrolly" href="index.html">Home</a></li>
+            <li><a class="scrolly" href="#banner">About</a></li>
+            <li><a class="scrolly" href="#main-content-tabs" onclick="showMainTab('experience-tab-content')">Work Experience</a></li>
+            <li><a class="scrolly" href="#main-content-tabs" onclick="showMainTab('skills-tab-content')">Skills</a></li>
+            <li><a class="scrolly" href="#main-content-tabs" onclick="showMainTab('portfolio-tab-content')">Projects</a></li>
+            <li><a class="scrolly" href="#main-content-tabs" onclick="showMainTab('education-certifications-tab-content')">Education</a></li>
+            <li><a class="scrolly" href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-				<!-- Banner -->
-				 <section id="banner" class="major" style="display: flex; align-items: center; min-height: 95vh;">
-   <!-- Profile Image Column -->
-    <div class ="inner" style="flex: 1; display: flex; justify-content: center; align-items: center;">
-        <img src="images/profile.jpg" alt="Samson Bavo" style="width: 500px; height: 500px; border-radius: 100%; object-fit: cover; box-shadow: 100 0px 100px rgba(0,0,0,0); " />
-    </div>
+</div>
 
-    <!-- Text Content Column -->
-    <div class="inner" style="flex: 2">
-        <header class="major" style="padding-top: 200px">
-            <h1 style="font-family: Georgia, serif;">I am Samson Bavo</h1>
-			<h2 style="font-family: Georgia, serif;">A Salesforce Administrator</h2>
-        </header>
-        <div class="content">
-            <p>"I transform Salesforce data and workflows into <br />
-				actionable insights that enhance clarity,<br />
-                 efficiency, and business growth."</p>
-            <ul class="actions">
-                <li><a href="https://samsonbavoportfolioprojects-dev-ed.trailblaze.my.site.com/portfolioprojects/" target="_blank" rel="noopener noreferrer"" class="button scrolly">My Portfolio</a></li>
-                <li><a href="https://drive.google.com/file/d/19RpNdu2WNLwK7Uv4VY2f3MSxUm9hvaG5/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="button scrolly">Download My Resume 📥</a></li>
-            </ul>
-			
-        </div>
-		<div id="wrapper" class = "scrolly solid  fa-arrow-down icon" href = "#one" style="font-size: 30px; text-indent: 400px; display: flex; padding-top: 150px"> 
-			
-		</div>	
-    </div>
+  <!-- Banner -->
+    <section id="banner" class="major flex flex-col lg:flex-row items-center justify-center px-0 gap-0 mt-40 lg:mt-40">
 
-</section>
-
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- One -->
-						 	<section id="one" >
-								<div class="inner">
-									<header class="major">
-										<h1 style="font-family: Georgia, serif; font-size: 30px; font-weight: bold; text-align: right">My Salesforce Credentials</h1>
-									</header>
-	
-<!-- start code from gemini -->
-<section id="badge-stats" style="
-    padding: 3rem 2rem;
-    background: url('/mnt/data/9ea196fc-ffb5-4e7c-ba90-6b300cdd7035.png') no-repeat center center;
-    background-size: cover;
-    width: 100%;">
-  
-  <div style="
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 3rem;
-      flex-wrap: nowrap;
-      color: white;
-      font-family: 'Inter', sans-serif;
-      max-width: 100%;
-    ">
+        <!-- Text Content Column -->
+      <div class="inner w-full lg:w-2/3" >
+          <h1 class="font-sans font-bold text-4xl lg:text-5xl text-center" style="font-size: 36px; border-bottom: 2px solid white; padding-bottom: 16px;" >About Me</h1>
     
-    <!-- Badge Icon -->
-    <div>
-     <a href="https://www.salesforce.com/trailblazer/sbavo" target="_blank">
-  <img 
-    src="images/Ranger.jpg" 
-    width="200" 
-    height="150" 
-    alt="Ranger Badge" 
-    style="
-      border-radius: 30%;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    "
-    onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 4px 20px rgba(0,0,0,0.3)'"
-    onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none'"
-  >
-</a>
+<!-- About / Method / Mission - 3 Column Layout -->
+<section id="banner2" class="major px-4 py-10">
+  <div class="w-[100%] mx-auto flex flex-col lg:flex-row justify-between items-stretch gap-0">
+
+    <!-- Column 1: About Me -->
+    <div class="w-full lg:w-1/3 bg-white/5 p-4 rounded-xl shadow-md transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg">
+      <div class="flex flex-col items-center text-center">
+        <img src="images/What I do.jpg" alt="What I Do" class="rounded-lg w-84 h-auto mb-3">
+          <h3 class="major text-4xl font-semibold mb-5" style="border-bottom: 2px solid white;" >My Way</h3>
+        <h4 class="text-2xl font-medium mb-3">What I Do</h4>
+        <p class="text-lg leading-relaxed mb-1">
+          As a Salesforce-Certified Administrator with over 5 years of experience, I specialize in scalable CRM automations, managing user access, and delivering insights through Power BI, Tableau, and Salesforce Reports.
+        </p>
+        <ul class="actions mt-2 flex flex-row justify-center gap-2 flex-wrap">
+          <li><a href="#main-content-tabs" onclick="showMainTab('portfolio-tab-content')" class="button scrolly text-xs px-3 py-1.5">Projects</a></li>
+          <li><a href="https://drive.google.com/file/d/11dFlorehoHP2I4XSOOZf9Ujk3KU3KEe1/view?usp=sharing" target="_blank" class="button scrolly text-xs px-3 py-1.5">Download Resume 📥</a></li>
+        </ul>
+      </div>
     </div>
 
-    <!-- Badges -->
-    <div>
-      <p style="font-weight: 700; color: #e0e7ff; font-size: 2.25rem; margin-bottom: 0.25rem;">Badges</p>
-      <p style="font-size: 1.85rem;">159+</p>
+    <!-- Column 2: My Method -->
+    <div class="w-full lg:w-1/3 bg-white/5 p-4 rounded-xl shadow-md transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg">
+      <div class="flex flex-col items-center text-center">
+        <img src="images/How I do.jpg" alt="How I Do It" class="rounded-lg w-84 h-auto mb-4">
+        <h3 class="major text-4xl font-semibold mb-5" style="border-bottom: 2px solid white;" >My Method</h3>
+        <h4 class="text-2xl font-medium mb-3">How I Do It</h4>
+        <p class="text-lg leading-relaxed mb-1">
+          I take a data-driven approach—using Salesforce automation, secure user access, and collaboration with cross-functional teams to create scalable, efficient processes and dashboards aligned with goals.
+        </p>
+        <ul class="actions mt-2 flex flex-row justify-center gap-2 flex-wrap">
+          <li><a href="#main-content-tabs" onclick="showMainTab('portfolio-tab-content')" class="button scrolly text-xs px-3 py-1.5">Projects</a></li>
+          <li><a href="https://drive.google.com/file/d/11dFlorehoHP2I4XSOOZf9Ujk3KU3KEe1/view?usp=sharing" target="_blank" class="button scrolly text-xs px-3 py-1.5">Download Resume 📥</a></li>
+        </ul>
+      </div>
     </div>
 
-    <!-- Super Badges -->
-    <div>
-      <p style="font-weight: 700; color: #e0e7ff; font-size: 2.25rem; margin-bottom: 0.25rem;">Super Badges</p>
-      <p style="font-size: 1.85rem;">3+</p>
+    <!-- Column 3: My Mission -->
+    <div class="w-full lg:w-1/3 bg-white/5 p-4 rounded-xl shadow-md transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg">
+      <div class="flex flex-col items-center text-center">
+        <img src="images/Why I Do.jpg" alt="Why I Do It" class="rounded-lg w-84 h-auto mb-3">
+        <h3 class="major text-4xl font-semibold mb-5" style="border-bottom: 2px solid white;" >My Mission</h3>
+        <h4 class="text-2xl font-medium mb-3">Why I Do It</h4>
+        <p class="text-lg leading-relaxed mb-1">
+          I’m driven by the opportunity to simplify complexity and empower teams. I design Salesforce systems and dashboards that reduce friction, support decisions, and help organizations thrive.
+        </p>
+        <ul class="actions mt-2 flex flex-row justify-center gap-2 flex-wrap">
+          <li><a href="#main-content-tabs" onclick="showMainTab('portfolio-tab-content')" class="button scrolly text-xs px-3 py-1.5">Projects</a></li>
+          <li><a href="https://drive.google.com/file/d/11dFlorehoHP2I4XSOOZf9Ujk3KU3KEe1/view?usp=sharing" target="_blank" class="button scrolly text-xs px-3 py-1.5">Download Resume 📥</a></li>
+        </ul>
+      </div>
     </div>
 
-    <!-- Points -->
-    <div>
-      <p style="font-weight: 700; color: #e0e7ff; font-size: 2.25rem; margin-bottom: 0.25rem;">Points</p>
-      <p style="font-size: 1.85rem;">81525+</p>
-    </div>
-
-    <!-- Trails -->
-    <div>
-      <p style="font-weight: 700; color: #e0e7ff; font-size: 2.25rem; margin-bottom: 0.25rem;">Trails</p>
-      <p style="font-size: 1.85rem;">32+</p>
-    </div>
   </div>
 </section>
-<!-- end code from gemini -->
+</section>
 
 
-									<ul class="actions">
-										<li><a href="About.html" class="button next">About Me</a></li>
-									</ul>
-								</div>
-								<div id="wrapper" class = "scrolly solid  fa-arrow-down icon" href = "#journey" style="font-size: 30px; text-indent: 1000px; display: flex; padding-top: 0px"> 
-			
-								</div>	
-							</section>
-	
 	<!-- Isolated and Integrated: My Professional Journey & Expertise Section -->
-	 <section id="journey">					
+			
 	
 <style>
     /* Custom background color from the attached image */
     .bg-dark-purple-blue {
-        background-color: #2b2b3b; /* A dark blue-grey extracted from the image */
+        background-color: #152238; /* A dark blue-grey extracted from the image */
     }
 
     /* Styles for the main tabs */
@@ -186,15 +162,16 @@
     .nested-tab-button {
         padding: 0.5rem 1rem;
         border-bottom: none; /* Removed border */
-        font-weight: 500;
+        font-weight: 600;
         cursor: pointer;
         transition: all 0.3s ease;
-        color: #cbd5e0; /* Default text color for nested tabs - light gray */
+        color: #41b6d3; /* Default text color for nested tabs - light gray */
         position: relative; /* Needed for transform */
     }
     .nested-tab-button.active {
         /* No border-bottom for active state either */
-        color: #41b6d3; /* A vibrant blue for active nested tab */
+        color: #cbd5e0; /* A vibrant blue for active nested tab */
+        border-bottom: white;
     }
     .nested-tab-button:hover:not(.active) {
         color: #41b6d3; /* Lighter blue on hover */
@@ -241,16 +218,44 @@
     }
 </style>
 
-<section id="main-content-tabs" class="bg-dark-purple-blue py-16 md:py-24 rounded-xl shadow-inner text-white">
-    <div class="container mx-auto px-4">
-        <h1 class="text-3xl md:text-4xl font-bold text-center mb-12" style="font-family: Georgia, serif; font-size: 36px; font-weight: bold; color: white">My Professional Journey & Expertise</h1>
+ 
+<section id="main-content-tabs" class="fade-in bg-dark-purple-blue py-16 md:py-24 rounded-xl shadow-inner text-white major flex flex-col items-center justify-center px-4 mt-5">
 
-        <div class="flex flex-wrap justify-center mb-8">
-            <button class="main-tab-button active" data-tab="experience-tab-content">Experience</button>
-            <button class="main-tab-button" data-tab="skills-tab-content">Tools & Skills</button>
-            <button class="main-tab-button" data-tab="portfolio-tab-content">Portfolio</button>
-            <button class="main-tab-button" data-tab="education-certifications-tab-content">Education & Certifications</button>
-        </div>
+  <div class="w-full lg:w-2/3 justify-center">
+    <header>
+  <h1 class="font-sans font-bold text-4xl lg:text-5xl text-center" style="font-size: 36px; border-bottom: 2px solid white; padding-bottom: 16px;">My Resume</h1>
+</header>
+
+    <div class="flex flex-wrap justify-center mb-0">
+      <button class="main-tab-button active" data-tab="experience-tab-content">Work Experience</button>
+      <button class="main-tab-button" data-tab="skills-tab-content">Core Skills & Tools</button>
+      <button class="main-tab-button" data-tab="portfolio-tab-content">Projects</button>
+      <button class="main-tab-button" data-tab="education-certifications-tab-content">Education & Certifications</button>
+    </div>
+
+    <style>
+      .main-tab-button,
+      .main-tab-button:focus,
+      .main-tab-button:active,
+      .nested-tab-button,
+      .nested-tab-button:focus,
+      .nested-tab-button:active {
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+        border-bottom: 2px solid transparent !important;
+      }
+
+      .main-tab-button.active,
+      .main-tab-button:hover {
+        border-bottom: 2px solid #ffffff !important;
+      }
+
+      .nested-tab-button.active,
+      .nested-tab-button:hover {
+        border-bottom: 2px solid #ffffff !important;
+      }
+    </style>
 
         <div id="experience-tab-content" class="main-tab-content active">
             <h3 class="sr-only">Professional Experience</h3>
@@ -308,57 +313,118 @@
         <div id="skills-tab-content" class="main-tab-content">
             <div class="max-w-5xl mx-auto">
                 <div class="flex justify-center mb-8">
-                    <button class="nested-tab-button active" data-tab="leadership">Technical Skills</button>
+                    <button id="leadership-to-be-triggered" class="nested-tab-button active" data-tab="leadership">Technical Skills</button>
                     <button class="nested-tab-button" data-tab="technical">Tools & Softwares</button>
-					<button class="nested-tab-button" data-tab="software">Software Development Methodologies</button>
-					<button class="nested-tab-button" data-tab="soft">Soft Skills</button>
                 </div>
 
-                <div id="leadership" class="nested-tab-content active">
+                <div id="leadership" class="nested-tab-content active center-text">
                     <h3 class="sr-only">Technical Skills</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <div class="card p-6 rounded-lg shadow-md">
-                            <p class="text-gray-300 font-semibold text-lg">Process Automation</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
+                       <div class="card p-6 rounded-lg shadow-md">
+                            <svg class="w-12 h-12 mb-4 mx-auto" style="color: #ffffff;" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 
+                             0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 
+                            0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z">
+                            </path>
+                            </svg>
+                            <h3 class="text-xl font-semibold" style="color: hsl(0, 0%, 100%);">Automation & Process Optimization</h3>
+                            <p class="text-sm mt-2" style="color: #ffffff;">Designing and implementing Flows, Process Builders, and Workflow Rules to streamline operations and enhance efficiency.</p>
                         </div>
                         <div class="card p-6 rounded-lg shadow-md">
-                            <p class="text-gray-300 font-semibold text-lg">Reports & Dashboards</p>
+                            <svg class="w-12 h-12 mb-4 mx-auto" style="color: #ffffff;" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 5h18a2 2 0 012 2v10a2 2 0 01-2 2H3a2 2 0 01-2-2V7a2 2 0 012-2z">
+                            </path>
+                            </svg>
+                            <h3 class="text-xl font-semibold" style="color: hsl(0, 0%, 100%);">Data Management & Analytics</h3>
+                            <p class="text-sm mt-2" style="color: #ffffff;">Ensuring data integrity, quality, and developing actionable insights through robust reporting and dashboards.</p>
                         </div>
                         <div class="card p-6 rounded-lg shadow-md">
-                            <p class="text-gray-300 font-semibold text-lg">ETL Processs</p>
+                            <svg class="w-12 h-12 mb-4 mx-auto" style="color: #ffffff;" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4">
+                            </path>
+                            </svg>
+                            <h3 class="text-xl font-semibold" style="color: hsl(0, 0%, 100%);">Integration</h3>
+                            <p class="text-sm mt-2" style="color: #ffffff;">Connecting Salesforce with external systems using APIs, Middleware (e.g., MuleSoft), and AppExchange solutions</p>
                         </div>
                         <div class="card p-6 rounded-lg shadow-md">
-                            <p class="text-gray-300 font-semibold text-lg">Data Integration</p>
+                            <svg class="w-12 h-12 mb-4 mx-auto" style="color: #ffffff;" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-6-10l2 2m0 0l2 2m-2-2L6 9m2-2L6 5m14 6v2a9 9 0 01-18 0v-2">
+                            </path>
+                            </svg>
+                            <h3 class="text-xl font-semibold" style="color: hsl(0, 0%, 100%);">Change Management & User Adoption</h3>
+                            <p class="text-sm mt-2" style="color: #ffffff;">Leading training, documentation, and communication strategies for smooth transitions and high user engagement.</p>
                         </div>
                         <div class="card p-6 rounded-lg shadow-md">
-                            <p class="text-gray-300 font-semibold text-lg">User Acces & Security Management</p>
+                            <svg class="w-12 h-12 mb-4 mx-auto" style="color: #ffffff;" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.003 12.003 0 002.924 12c0 3.072 1.887 5.817 4.717 7.039v-5.262m9.414 0l-4.707 4.707M12 21c-3.072 0-5.817-1.887-7.039-4.717h5.262m9.414 0A11.955 11.955 0 0121.056 12c0-3.072-1.887-5.817-4.717-7.039"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z">
+                            </path>
+                            </svg>
+                            <h3 class="text-xl font-semibold" style="color: hsl(0, 0%, 100%);">Security & Compliance</h3>
+                            <p class="text-sm mt-2" style="color: #ffffff;">Implementing robust security models (OWD, Profiles, Permission Sets) and ensuring adherence to data governance policies.</p>
                         </div>
                         <div class="card p-6 rounded-lg shadow-md">
-                            <p class="text-gray-300 font-semibold text-lg">Data Governance & Security</p>
+                            <svg class="w-12 h-12 mb-4 mx-auto" style="color: #ffffff;" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 8c1.657 0 3 .895 3 2s-1.343 2-3 2c-1.657 0-3-.895-3-2s1.343-2 3-2z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8V5m0 3v8m0-8h3m-3 0H9"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 17l-4 4-4-4">
+                            </path>
+                            </svg>
+                            <h3 class="text-xl font-semibold" style="color: hsl(0, 0%, 100%);">Reports & Dashboards</h3>
+                            <p class="text-sm mt-2" style="color: #ffffff;">Creating insightful reports and dynamic dashboards to provide real-time visibility into key business metrics.</p>
                         </div>
                         <div class="card p-6 rounded-lg shadow-md">
-                            <p class="text-gray-300 font-semibold text-lg">Data Analysis & Visualization</p>
+                            <svg class="w-12 h-12 mb-4 mx-auto" style="color: #ffffff;" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4">
+                            </path>
+                            </svg>
+                            <h3 class="text-xl font-semibold" style="color: hsl(0, 0%, 100%);">Testing & Deployment</h3>
+                            <p class="text-sm mt-2" style="color: #ffffff;">Managing Sandbox strategies, conducting thorough UAT, and executing seamless metadata deployments.</p>
                         </div>
                         <div class="card p-6 rounded-lg shadow-md">
-                            <p class="text-gray-300 font-semibold text-lg">Database Management</p>
+                            <svg class="w-12 h-12 mb-4 mx-auto" style="color: #ffffff;" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37a1.724 1.724 0 002.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z">
+                            </path>
+                            </svg>
+                            <h3 class="text-xl font-semibold" style="color: hsl(0, 0%, 100%);">Troubleshooting</h3>
+                            <p class="text-sm mt-2" style="color: #ffffff;">Efficiently diagnosing and resolving complex Salesforce issues efficiently, ensuring minimal disruption to business operations.</p>
                         </div>
                         <div class="card p-6 rounded-lg shadow-md">
-                            <p class="text-gray-300 font-semibold text-lg">Business Analysis</p>
-                        </div>
-                        <div class="card p-6 rounded-lg shadow-md">
-                            <p class="text-gray-300 font-semibold text-lg">Requirement Gathering & Documentation</p>
-                        </div>
-						<div class="card p-6 rounded-lg shadow-md">
-                            <p class="text-gray-300 font-semibold text-lg">Process Mapping & Modeling</p>
-                        </div>
-						<div class="card p-6 rounded-lg shadow-md">
-                            <p class="text-gray-300 font-semibold text-lg">Gap Analysis</p>
-                        </div>
-						<div class="card p-6 rounded-lg shadow-md">
-                            <p class="text-gray-300 font-semibold text-lg">Stakeholders Management</p>
-                        </div><div class="card p-6 rounded-lg shadow-md">
-                            <p class="text-gray-300 font-semibold text-lg">Risk Assessment</p>
-                        </div><div class="card p-6 rounded-lg shadow-md">
-                            <p class="text-gray-300 font-semibold text-lg">Cost-Benefit Analysis</p>
+                            <svg class="w-12 h-12 mb-4 mx-auto" fill="none" stroke="white" stroke-width="2"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Center person -->
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 14c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M6 20v-1c0-2.21 1.79-4 4-4h4c2.21 0 4 1.79 4 4v1" />
+                                
+                                <!-- Left person -->
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M4.5 10a2.5 2.5 0 115 0 2.5 2.5 0 01-5 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2 20v-1c0-1.66 1.34-3 3-3h2" />
+                                
+                                <!-- Right person -->
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M14.5 10a2.5 2.5 0 115 0 2.5 2.5 0 01-5 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M22 20v-1c0-1.66-1.34-3-3-3h-2" />
+                            </svg>
+                            <h3 class="text-xl font-semibold" style="color: hsl(0, 0%, 100%);">Communication &Stakeholders Collaboration</h3>
+                            <p class="text-sm mt-2" style="color: #ffffff;">Gathering requirements, translating business needs into Salesforce solutions, training users, and providing support.</p>
                         </div>
                     </div>
                 </div>
@@ -366,112 +432,111 @@
                 <div id="technical" class="nested-tab-content">
                     <h3 class="sr-only">Tools & Softwares</h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <div class="card p-6 rounded-lg shadow-md">
-                            <p class="text-gray-300 font-semibold text-lg">Salesforce Flow</p>
+                        <div class="card p-6 rounded-lg shadow-md text-center">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/salesforce/salesforce-original.svg" alt="Salesforce Flow Logo" class="w-12 h-12 mx-auto mb-2">
+                        <p class="text-gray-300 font-semibold text-lg">Salesforce Clouds & Salesforce Automation-Flow</p>
                         </div>
-                        <div class="card p-6 rounded-lg shadow-md">
-                            <p class="text-gray-300 font-semibold text-lg">Data Loader</p>
+
+                        <div class="card p-6 rounded-lg shadow-md text-center">
+                        <img src="images/data-loader.jpg" alt="Data Loader Logo" class="w-12 h-12 mx-auto mb-2">
+                        <p class="text-gray-300 font-semibold text-lg">Salesforce Data Loader</p>
                         </div>
-                        <div class="card p-6 rounded-lg shadow-md">
-                            <p class="text-gray-300 font-semibold text-lg">Change Sets</p>
+
+                        <div class="card p-6 rounded-lg shadow-md text-center">
+                        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968342.png" alt="Change Sets Logo" class="w-12 h-12 mx-auto mb-2">
+                        <p class="text-gray-300 font-semibold text-lg">Change Sets</p>
                         </div>
-                        <div class="card p-6 rounded-lg shadow-md">
-                            <p class="text-gray-300 font-semibold text-lg">SOQL</p>
+
+                        <div class="card p-6 rounded-lg shadow-md text-center">
+                        <img src="images/SOQL.jpg" alt="SOQL Logo" class="w-12 h-12 mx-auto mb-2">
+                        <p class="text-gray-300 font-semibold text-lg">SOQL</p>
                         </div>
-                        <div class="card p-6 rounded-lg shadow-md">
-                            <p class="text-gray-300 font-semibold text-lg">Power BI</p>
+
+                        <div class="card p-6 rounded-lg shadow-md text-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" alt="Power BI Logo" class="w-12 h-12 mx-auto mb-2">
+                        <p class="text-gray-300 font-semibold text-lg">Power BI</p>
                         </div>
-                        <div class="card p-6 rounded-lg shadow-md">
-                            <p class="text-gray-300 font-semibold text-lg">Tableau</p>
+
+                        <div class="card p-6 rounded-lg shadow-md text-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Tableau_Logo.png" alt="Tableau Logo" class="w-12 h-12 mx-auto mb-2">
+                        <p class="text-gray-300 font-semibold text-lg">Tableau</p>
                         </div>
-						<div class="card p-6 rounded-lg shadow-md">
-                            <p class="text-gray-300 font-semibold text-lg">Excel</p>
+
+                        <div class="card p-6 rounded-lg shadow-md text-center">
+                        <img src="https://cdn-icons-png.flaticon.com/512/732/732220.png" alt="Excel Logo" class="w-12 h-12 mx-auto mb-2">
+                        <p class="text-gray-300 font-semibold text-lg">Excel</p>
                         </div>
-                        <div class="card p-6 rounded-lg shadow-md">
-                            <p class="text-gray-300 font-semibold text-lg">Google Sheets</p>
+
+                        <div class="card p-6 rounded-lg shadow-md text-center">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python Logo" class="w-12 h-12 mx-auto mb-2">
+                        <p class="text-gray-300 font-semibold text-lg">Python</p>
                         </div>
-                        <div class="card p-6 rounded-lg shadow-md">
-                            <p class="text-gray-300 font-semibold text-lg">Python</p>
+
+                        <div class="card p-6 rounded-lg shadow-md text-center">
+                        <img src="https://cdn.iconscout.com/icon/free/png-256/free-google-analytics-2038785-1721672.png" alt="Google Analytics Logo" class="w-12 h-12 mx-auto mb-2">
+                        <p class="text-gray-300 font-semibold text-lg">Google Analytics</p>
                         </div>
-                        <div class="card p-6 rounded-lg shadow-md">
-                            <p class="text-gray-300 font-semibold text-lg">Google Analytics</p>
+
+                        <div class="card p-6 rounded-lg shadow-md text-center">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" alt="Jira Logo" class="w-12 h-12 mx-auto mb-2">
+                        <p class="text-gray-300 font-semibold text-lg">Jira</p>
                         </div>
-                        <div class="card p-6 rounded-lg shadow-md">
-                            <p class="text-gray-300 font-semibold text-lg">Jira</p>
+
+                        <div class="card p-6 rounded-lg shadow-md text-center">
+                        <img src="images/Confluence.jpg" alt="Confluence Logo" class="w-12 h-12 mx-auto mb-2">
+                        <p class="text-gray-300 font-semibold text-lg">Confluence</p>
                         </div>
-                        <div class="card p-6 rounded-lg shadow-md">
-                            <p class="text-gray-300 font-semibold text-lg">Confluence</p>
+
+                        <div class="card p-6 rounded-lg shadow-md text-center">
+                        <img src="images/lucidchart.jpg" alt="Lucidchart Logo" class="w-12 h-12 mx-auto mb-2">
+                        <p class="text-gray-300 font-semibold text-lg">Lucidchart</p>
                         </div>
-						<div class="card p-6 rounded-lg shadow-md">
-                            <p class="text-gray-300 font-semibold text-lg">Lucidchart</p>
+
+                        <div class="card p-6 rounded-lg shadow-md text-center">
+                        <img src="https://code.visualstudio.com/assets/images/code-stable.png" alt="VS Code Logo" class="w-12 h-12 mx-auto mb-2">
+                        <p class="text-gray-300 font-semibold text-lg">Visio Code</p>
                         </div>
-                        <div class="card p-6 rounded-lg shadow-md">
-                            <p class="text-gray-300 font-semibold text-lg">Visio Code</p>
+
+                        <div class="card p-6 rounded-lg shadow-md text-center">
+                        <img src="images/drawio.jpg" alt="Draw.io Logo" class="w-12 h-12 mx-auto mb-2">
+                        <p class="text-gray-300 font-semibold text-lg">Draw.io</p>
                         </div>
-                        <div class="card p-6 rounded-lg shadow-md">
-                            <p class="text-gray-300 font-semibold text-lg">Draw.io</p>
+
+                        <div class="card p-6 rounded-lg shadow-md text-center">
+                        <img src="images/Balsamiq.jpg" alt="Balsamiq Logo" class="w-12 h-12 mx-auto mb-2">
+                        <p class="text-gray-300 font-semibold text-lg">Balsamiq</p>
                         </div>
-                        <div class="card p-6 rounded-lg shadow-md">
-                            <p class="text-gray-300 font-semibold text-lg">Balsamiq</p>
+
+                        <div class="card p-6 rounded-lg shadow-md text-center">
+                        <img src="https://cdn.worldvectorlogo.com/logos/trello.svg" alt="Trello Logo" class="w-12 h-12 mx-auto mb-2">
+                        <p class="text-gray-300 font-semibold text-lg">Trello</p>
                         </div>
-                        <div class="card p-6 rounded-lg shadow-md">
-                            <p class="text-gray-300 font-semibold text-lg">Trello</p>
+
+                        <div class="card p-6 rounded-lg shadow-md text-center">
+                        <img src="https://cdn.worldvectorlogo.com/logos/asana-1.svg" alt="Asana Logo" class="w-12 h-12 mx-auto mb-2">
+                        <p class="text-gray-300 font-semibold text-lg">Asana</p>
                         </div>
-                        <div class="card p-6 rounded-lg shadow-md">
-                            <p class="text-gray-300 font-semibold text-lg">Asana</p>
-                        </div><div class="card p-6 rounded-lg shadow-md">
-                            <p class="text-gray-300 font-semibold text-lg">Monday.com</p>
+
+                        <div class="card p-6 rounded-lg shadow-md text-center">
+                        <img src="images/Monday.jpg" alt="Monday.com Logo" class="w-12 h-12 mx-auto mb-2">
+                        <p class="text-gray-300 font-semibold text-lg">Monday.com</p>
                         </div>
-                        <div class="card p-6 rounded-lg shadow-md">
-                            <p class="text-gray-300 font-semibold text-lg">Slack</p>
+
+                        <div class="card p-6 rounded-lg shadow-md text-center">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg" alt="Slack Logo" class="w-12 h-12 mx-auto mb-2">
+                        <p class="text-gray-300 font-semibold text-lg">Slack</p>
                         </div>
-                        <div class="card p-6 rounded-lg shadow-md">
-                            <p class="text-gray-300 font-semibold text-lg">Microsoft Teams</p>
+
+                        <div class="card p-6 rounded-lg shadow-md text-center">
+                        <img src="images/Officesuite.jpg" alt="Microsoft Office Suite Logo" class="w-12 h-12 mx-auto mb-2">
+                        <p class="text-gray-300 font-semibold text-lg">Microsoft Office Suite</p>
                         </div>
-                        <div class="card p-6 rounded-lg shadow-md">
-                            <p class="text-gray-300 font-semibold text-lg">Zoom</p>
+
+                        <div class="card p-6 rounded-lg shadow-md text-center">
+                        <img src="images/miro.jpg" alt="Miro Logo" class="w-12 h-12 mx-auto mb-2">
+                        <p class="text-gray-300 font-semibold text-lg">Miro</p>
                         </div>
-                        <div class="card p-6 rounded-lg shadow-md">
-                            <p class="text-gray-300 font-semibold text-lg">Microsoft office Suite</p>
-                        </div>
-                        <div class="card p-6 rounded-lg shadow-md">
-                            <p class="text-gray-300 font-semibold text-lg">Miro</p>
-                        </div>
-                    </div>
-                </div>
-				<div id="software" class="nested-tab-content">
-                    <h3 class="sr-only">Software Development Methodologies</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <div class="card p-6 rounded-lg shadow-md">
-                            <p class="text-gray-300 font-semibold text-lg">Agile</p>
-                        </div>
-                        <div class="card p-6 rounded-lg shadow-md">
-                            <p class="text-gray-300 font-semibold text-lg">Waterfall</p>
-                        </div>
-                        
-                    </div>
-                </div>
-				<div id="soft" class="nested-tab-content">
-                    <h3 class="sr-only">Soft Skills</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <div class="card p-6 rounded-lg shadow-md">
-                            <p class="text-gray-300 font-semibold text-lg">Time Management</p>
-                        </div>
-                        <div class="card p-6 rounded-lg shadow-md">
-                            <p class="text-gray-300 font-semibold text-lg">Effective Communicator</p>
-                        </div>
-                        <div class="card p-6 rounded-lg shadow-md">
-                            <p class="text-gray-300 font-semibold text-lg">Problem-Solver</p>
-                        </div>
-                        <div class="card p-6 rounded-lg shadow-md">
-                            <p class="text-gray-300 font-semibold text-lg">Creative</p>
-                        </div>
-                        <div class="card p-6 rounded-lg shadow-md">
-                            <p class="text-gray-300 font-semibold text-lg">Attention to Detail</p>
-                        </div>
-                        <div class="card p-6 rounded-lg shadow-md">
-                            <p class="text-gray-300 font-semibold text-lg">Cross-functional Team Collaborator</p>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -485,7 +550,7 @@
                     <div class="p-6">
                         <h4 class="text-xl font-semibold mb-2 text-gray-200">Event Management App</h4>
                         <p class="text-gray-300 text-sm mb-4">The project delivered a comprehensive Salesforce-based event management app for Blackforce, streamlining event creation, attendance tracking, and reporting for activities like Master Classes and Alumni Lunch & Learns.</p>
-                        <a href="https://samsonbavoportfolioprojects-dev-ed.trailblaze.my.site.com/portfolioprojects/event-management-app"  target="_blank" class="inline-block text-purple-300 hover:text-purple-400 font-medium text-sm">View Project &rarr;</a>
+                        <a href="https://samsonbavoportfolioprojects-dev-ed.trailblaze.my.site.com/portfolioprojects/event-management-app"  target="_blank" class="inline-block text-purple-300 hover:text-purple-400 font-medium text-sm">Project Details &rarr;</a>
                     </div>
                 </div>
                 <div class="card rounded-lg overflow-hidden">
@@ -493,7 +558,7 @@
                     <div class="p-6">
                         <h4 class="text-xl font-semibold mb-2 text-gray-200">Dubai Visa Application Website</h4>
                         <p class="text-gray-300 text-sm mb-4"> The Project developed a streamlined, user-friendly platform for applying, tracking, and managing Dubai Visa Applications.</p>
-                        <a href="https://samsonbavoportfolioprojects-dev-ed.trailblaze.my.site.com/portfolioprojects/dubai-visa-application-website" target="_blank" class="inline-block text-purple-300 hover:text-purple-400 font-medium text-sm">View Project &rarr;</a>
+                        <a href="https://samsonbavoportfolioprojects-dev-ed.trailblaze.my.site.com/portfolioprojects/dubai-visa-application-website" target="_blank" class="inline-block text-purple-300 hover:text-purple-400 font-medium text-sm">Project Details &rarr;</a>
                     </div>
                 </div>
                 <div class="card rounded-lg overflow-hidden">
@@ -501,7 +566,7 @@
                     <div class="p-6">
                         <h4 class="text-xl font-semibold mb-2 text-gray-200">Students Case Management System</h4>
                         <p class="text-gray-300 text-sm mb-4">The project improved Blackforce’s support by streamlining case management, automating entitlements, and delivering insightful Salesforce dashboards.</p>
-                        <a href="https://samsonbavoportfolioprojects-dev-ed.trailblaze.my.site.com/portfolioprojects/students-case-management-system" target="_blank" class="inline-block text-purple-300 hover:text-purple-400 font-medium text-sm">View Project &rarr;</a>
+                        <a href="https://samsonbavoportfolioprojects-dev-ed.trailblaze.my.site.com/portfolioprojects/students-case-management-system" target="_blank" class="inline-block text-purple-300 hover:text-purple-400 font-medium text-sm">Project Details &rarr;</a>
                     </div>
                 </div>
                 <div class="card rounded-lg overflow-hidden">
@@ -509,7 +574,7 @@
                     <div class="p-6">
                         <h4 class="text-xl font-semibold mb-2 text-gray-200">Eduforce Advanced Salesforce Integration</h4>
                         <p class="text-gray-300 text-sm mb-4">The project aimed to enhance Eduforce's Salesforce Platform by integrating advanced features and automating processes to boost efficiency and student satisfaction.</p>
-                        <a href="https://samsonbavoportfolioprojects-dev-ed.trailblaze.my.site.com/portfolioprojects/eduforce-salesforce-integration" target="_blank" class="inline-block text-purple-300 hover:text-purple-400 font-medium text-sm">View Project &rarr;</a>
+                        <a href="https://samsonbavoportfolioprojects-dev-ed.trailblaze.my.site.com/portfolioprojects/eduforce-salesforce-integration" target="_blank" class="inline-block text-purple-300 hover:text-purple-400 font-medium text-sm">Project Details &rarr;</a>
                     </div>
                 </div>
                 <div class="card rounded-lg overflow-hidden opacity-75">
@@ -524,46 +589,67 @@
         </div>
 
         <div id="education-certifications-tab-content" class="main-tab-content">
-            <h3 class="sr-only">Education & Professional Development</h3>
-            <div class="max-w-4xl mx-auto space-y-12">
-                <a href="https://drive.google.com/file/d/1tgjXtAZimxEpwKLxv1wETIZroo-He8Rw/view" target="_blank"><div class="card p-8 rounded-lg shadow-md text-center">
-                    <h4 class="text-3xl font-bold mb-8" style="color: #41b6d3">Education</h4>
-                    <div>
-                        <h5 class="text-2xl font-bold text-gray-200">Bachelor of Mathematics & Business Administration with Honor</h5>
-                        <p class="text-lg text-gray-300 font-semibold mb-2">Memorial University of Newfoundland, Canada</p>
-                        
-                    </div>
-                </div></a>
+  <h3 class="sr-only">Education & Professional Development</h3>
+  <div class="max-w-4xl mx-auto space-y-12">
 
-                <div class="card p-8 rounded-lg shadow-md text-center">
-                    <h4 class="text-3xl font-bold mb-8" style="color: #41b6d3"> Professional Development & Certifications</h4>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
-                        <a href="https://drive.google.com/file/d/1mSp3EsoJG6apS3AwEoCzXSjHHpw0s3mm/view" target="_blank"><div class="card p-6 rounded-lg shadow-md">
-                            <h5 class="text-xl font-semibold text-gray-200">Salesforce Certified Administrator</h5>
-                            
-                        </div></a>
-                        <a href="https://drive.google.com/file/d/1wrzmuH43ojkTLZbX8T58W_E0OZxsW5Ez/view" target="_blank"><div class="card p-6 rounded-lg shadow-md">
-                            <h5 class="text-xl font-semibold text-gray-200">Salesforce Certified Agentforce Specialist</h5>
-                            
-                        </div></a>
-                        <a href="https://drive.google.com/file/d/1EOm62DF9B6PYnVBQjlpz5In6FF1jLzp6/view" target="_blank"><div class="card p-6 rounded-lg shadow-md">
-                            <h5 class="text-xl font-semibold text-gray-200">Professional Scrum Product Owner I</h5>
-                            
-                        </div></a>
-                        <a href="https://drive.google.com/file/d/143eIS7jtT5tXTJBjvTsXt5_GdpVScoNu/view" target="_blank"><div class="card p-6 rounded-lg shadow-md">
-                            <h5 class="text-xl font-semibold text-gray-200">Professional Scrum Master I</h5>
-                            
-                        </div></a>
-                    </div>
-                </div>
-            </div>
+    <!-- Education Section -->
+    <a href="https://drive.google.com/file/d/1tgjXtAZimxEpwKLxv1wETIZroo-He8Rw/view" target="_blank">
+      <div class="card p-8 rounded-lg shadow-md text-center">
+        <h4 class="text-3xl font-bold mb-8" style="color: #41b6d3">Education</h4>
+        <div class="card p-6 rounded-lg shadow-md text-center">
+            <img src="images/Degreecert.jpg" alt="Bachelor of Mathematics & Business Administration with Honor" class="mx-auto mb-4 rounded shadow-md w-full h-48 object-contain">
+          <h5 class="text-2xl font-bold text-gray-200">Bachelor of Business Administration & Mathematics with Honors</h5>
+          <p class="text-lg text-gray-300 font-semibold mb-2">Memorial University of Newfoundland, Canada</p>
         </div>
+      </div>
+    </a>
+
+    <!-- Certifications Section -->
+    <div class="card p-8 rounded-lg shadow-md text-center">
+      <h4 class="text-3xl font-bold mb-8" style="color: #41b6d3">Professional Development & Certifications</h4>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
+
+        <!-- Certificate 1 -->
+        <a href="https://drive.google.com/file/d/1mSp3EsoJG6apS3AwEoCzXSjHHpw0s3mm/view" target="_blank">
+          <div class="card p-6 rounded-lg shadow-md text-center">
+            <img src="images/admincert.jpg" alt="Salesforce Certified Administrator" class="mx-auto mb-4 rounded shadow-md w-full h-48 object-contain">
+            <h5 class="text-xl font-semibold text-gray-200 mt-2">Salesforce Certified Administrator</h5>
+          </div>
+        </a>
+
+        <!-- Certificate 2 -->
+        <a href="https://drive.google.com/file/d/1wrzmuH43ojkTLZbX8T58W_E0OZxsW5Ez/view" target="_blank">
+          <div class="card p-6 rounded-lg shadow-md text-center">
+            <img src="images/AIcert.jpg" alt="Salesforce Certified Agentforce Specialist" class="mx-auto mb-4 rounded shadow-md w-full h-48 object-contain">
+            <h5 class="text-xl font-semibold text-gray-200 mt-2">Salesforce Certified Agentforce Specialist</h5>
+          </div>
+        </a>
+
+        <!-- Certificate 3 -->
+        <a href="https://drive.google.com/file/d/1EOm62DF9B6PYnVBQjlpz5In6FF1jLzp6/view" target="_blank">
+          <div class="card p-6 rounded-lg shadow-md text-center">
+            <img src="images/PSPOcert.jpg" alt="Professional Scrum Product Owner I" class="mx-auto mb-4 rounded shadow-md w-full h-48 object-contain">
+            <h5 class="text-xl font-semibold text-gray-200 mt-2">Professional Scrum Product Owner I</h5>
+          </div>
+        </a>
+
+        <!-- Certificate 4 -->
+        <a href="https://drive.google.com/file/d/143eIS7jtT5tXTJBjvTsXt5_GdpVScoNu/view" target="_blank">
+          <div class="card p-6 rounded-lg shadow-md text-center">
+            <img src="images/PSMcert.jpg" alt="Professional Scrum Master I" class="mx-auto mb-4 rounded shadow-md w-full h-48 object-contain">
+            <h5 class="text-xl font-semibold text-gray-200 mt-2">Professional Scrum Master <br/> I</h5>
+          </div>
+        </a>
+
+      </div>
     </div>
-	<div id="wrapper" class = "scrolly solid  fa-arrow-down icon" href = "#contact" style="font-size: 30px; text-indent: 1000px; display: flex; padding-top: 10px"> 
-			
-								</div>	
-							</section>
+
+  </div>
+</div>
+
+    </div>
 </section>
+
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -674,75 +760,69 @@
 
 <!-- end of chatGPT code -->
 
-				<!-- Contact -->
-					<section id="contact">
-						<div class="inner">
-							<section>
-									<h1 class="Major" style="font-family: Georgia, serif; font-size: 48px; font-weight: bold">Contact Me</h1>
-								<form method="post" action="https://formspree.io/f/manjlvar">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="6"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Clear" /></li>
-									</ul>
-								</form>
-							</section>
-							<section class="split">
-								<section>
-										<h1></h1>
-									<div class="contact-method">
-										<span class="icon solid alt fa-envelope"></span>
-										<h3>Email</h3>
-										<a href="mailto:samsonbavo@gmail.com">samsonbavo@gmail.com</a>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-phone"></span>
-										<h3>Phone</h3>
-										<a href="tel:+16477027217"><span>(647) 702-7217 </span> </a>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-home"></span>
-										<h3>Address</h3>
-										<span><br />
-										Toronto, ON<br />
-										Canada</span>
-									</div>
-								</section>
-							</section>
-						</div>
-					</section>
+<!-- Contact -->
+<section id="contact" class="bg-dark-purple-blue py-16 md:py-20 rounded-xl shadow-inner text-white major flex flex-col items-center justify-center px-4 mt-5">
+  <div class="w-full lg:w-2/3">
+    <header class="w-full border-b border-gray-400 mb-8">
+      <h1 class="font-sans font-bold text-4xl lg:text-5xl text-white text-center pb-2" style="font-size: 36px; border-bottom: 2px solid white; padding-bottom: 16px;">Contact Me</h1>
+    </header>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<ul class="icons">
-								<li><a href="https://www.linkedin.com/in/samson-bavo-663531235/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://samsonbavo.github.io/bavo/" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-							</ul>
-							<ul class="copyright">
-								<li>&copy; 2025</li><li>Design: <a href="https://samsonbavo.github.io/bavo/">Samson Bavo</a></li>
-							</ul>
-						</div>
-					</footer>
+    <form method="post" action="https://formspree.io/f/manjlvar" class="space-y-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <label for="name" class="block mb-1 text-lg font-semibold">Name</label>
+          <input type="text" name="name" id="name" class="w-full p-3 rounded-md text-black text-lg" />
+        </div>
+        <div>
+          <label for="email" class="block mb-1 text-lg font-semibold">Email</label>
+          <input type="text" name="email" id="email" class="w-full p-3 rounded-md text-black text-lg" />
+        </div>
+      </div>
+      <div>
+        <label for="message" class="block mb-1 text-lg font-semibold">Message</label>
+        <textarea name="message" id="message" rows="6" class="w-full p-3 rounded-md text-black text-lg"></textarea>
+      </div>
+      <div class="flex gap-4">
+        <input type="submit" value="Send Message" class="bg-white text-black px-5 py-2 rounded-md font-semibold cursor-pointer hover:bg-gray-300" />
+        <input type="reset" value="Clear" class="bg-gray-700 text-white px-5 py-2 rounded-md font-semibold cursor-pointer hover:bg-gray-600" />
+      </div>
+    </form>
 
-			</div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+      <div class="contact-method">
+        <span class="icon solid alt fa-envelope text-white text-xl"></span>
+        <h3 class="font-semibold mt-2 mb-1">Email</h3>
+        <a href="mailto:samsonbavo@gmail.com" class="text-purple-300 hover:text-purple-400">samsonbavo@gmail.com</a>
+      </div>
+      <div class="contact-method">
+        <span class="icon solid alt fa-phone text-white text-xl"></span>
+        <h3 class="font-semibold mt-2 mb-1">Phone</h3>
+        <a href="tel:+16477027217" class="text-purple-300 hover:text-purple-400">(647) 702-7217</a>
+      </div>
+      <div class="contact-method">
+        <span class="icon solid alt fa-home text-white text-xl"></span>
+        <h3 class="font-semibold mt-2 mb-1">Address</h3>
+        <p class="text-gray-300">Toronto, ON Canada</p>
+      </div>
+      <div class="contact-method">
+        <span class="icon brands alt fa-linkedin-in text-xl hover:text-purple-400"></span>
+        <a href="https://www.linkedin.com/in/samson-bavo-663531235/" target="_blank"  class="font-semibold mt-2 mb-1 text-purple-300 hover:text-purple-400">LinkedIn</a>
+      </div>
+      <div class="contact-method">
+        <span class="icon brands alt fa-linkedin-in text-xl hover:text-purple-400"></span>
+        <a href="https://github.com/samsonbavo" target="_blank"  class="font-semibold mt-2 mb-1 text-purple-300 hover:text-purple-400">GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer id="footer" class="bg-dark-purple-blue py-6 text-white w-full flex justify-center">
+  <div class="w-full lg:w-2/3 text-center">
+    <p class="text-sm text-gray-400">&copy; 2025 | Design: <a href="index.html" class="text-purple-300 hover:text-purple-400">Samson Bavo</a></p>
+  </div>
+</footer>
+
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
